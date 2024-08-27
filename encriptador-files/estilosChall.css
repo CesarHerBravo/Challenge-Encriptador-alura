@@ -1,0 +1,228 @@
+:root{
+
+    --color-uno:  #C5E898;
+    --color-dos: #29ADB2;
+    --color-tres: #0766AD;
+    --color-texto:  #FFF8DB;
+    --color-auxiliar:#9B86BD;
+    --color-aux2: #0A3871;
+
+
+    
+}
+*{
+
+font-family: "Inter", sans-serif;
+font-weight: 400;
+font-size: 30px;
+justify-content: center;
+align-items: center;
+gap: 80px;
+
+}
+header{
+   
+    padding: 2% 0% 0% 2%;
+
+}
+.logo{
+
+margin-left: 5px ;
+width: 7%;
+
+
+}
+
+body{
+    background-color:var(--color-uno);
+    justify-content: center;
+
+ 
+} 
+.panel{
+    padding: 6% 15%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items: center;   
+    width: 100%;
+    height: 50%;
+    padding: 20px;
+    box-shadow: 0 4px 8px ;
+    background-color: var(--color-tres);
+    border-radius: 10px;   
+    gap: 60px;
+}
+
+
+
+.panel__contenedor{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:var(--color-auxiliar);
+    padding: 5px;
+    border-radius: 20px;
+    width: 45%;
+    padding-bottom: 15px;
+    
+    
+} 
+
+.panel__contenedor__texto{
+    background-color: var(--color-texto);   
+    border: none;
+    border-radius: 24px;
+    color: var(--color-aux2) ;
+    margin-top:50px ;
+    text-transform: lowercase;
+    text-align: center;
+    height: 50%;
+
+
+}
+::placeholder {color: var(--color-aux2);}
+ .panel__contenedor__texto:focus {
+    outline: none;
+    }
+
+
+.panel__contenedor__informacion{
+    background-color: var(--color-auxiliar);
+    color: var(--color-aux2);
+    font-size: 18px;
+    font-weight: 600;
+}   
+
+.panel__contenedor__botonera{
+    display: flex;
+    margin-top: 18px;
+}
+
+.panel__contenedor__botonera_btnencriptar{
+    background-color:var(--color-tres);
+    border:7px double  var(--color-aux2) ;
+    border-radius: 24px;
+    color: var(--color-texto);
+    cursor: pointer;
+    height: 67px;    
+    width: 328px;  
+
+}
+
+.panel__contenedor__botonera_btndesencriptar{
+    background-color: var(--color-uno);
+    border: 7px double  var(--color-aux2) ;
+    border-radius: 24px;
+    color: var(--color-tres) ; 
+    cursor: pointer;
+    height: 67px;;
+    margin-left: 30px;
+    width: 328px;    
+    
+}
+
+
+.panel__resultado{
+display: flex;
+flex-direction: column;
+justify-content: center;
+background-color: var(--color-auxiliar);
+padding: 50px;
+width: 50%;
+height: 100%;
+flex: 1;
+min-width: 300px;
+max-width: 500px;
+text-align: center;
+border-radius: 20px;
+
+} 
+.panel__resultado__producto{
+ background-color:var(--color-texto) ;
+ background-image: url("img/Muñeco.png");
+
+ background-repeat: no-repeat;
+ border: none;
+ border-radius: 24px;
+ color:var(--color-aux2) ;
+ margin: 98px;
+ margin:10px 10px 10px 10px ;
+ padding-left: 20px;
+ 
+}
+.panel__resultado img {
+    margin-left: 5px;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+.panel__resultado__producto:focus {
+    outline: none;
+    }
+.panel__resultado h4 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+    
+.panel__resultado p {
+    font-size: 16px;
+}    
+
+ .panel__resultado__botones{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+ }   
+
+.panel__resultado__bntcopiar{
+    
+    background-color: var(--color-uno);
+    border: 7px double  var(--color-aux2) ;
+    border-radius: 24px;
+    color: var(--color-tres) ; 
+    cursor: pointer;
+    height: 67px;;
+    margin-left: 100px;
+    margin-top: 200px; 
+    width: 336px;   
+
+}  
+
+
+footer{
+    text-align: center;
+    background-color: var(--color-auxiliar);
+    width: 100vw;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px
+    
+}
+.copyright{
+    color: var(--color-tres);
+    background: transparent;
+    font-size: 16px;
+    font-weight: 500;   
+    margin: 10px;
+}
+@media (max-width: 1200px){
+    .header{
+         padding: 10%;
+    }
+
+    .panel{
+        justify-content: center;
+    }
+
+    .panel__contenedor{
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+    .panel__resultado{
+        width: 100%;
+    }
+
+   
+}
